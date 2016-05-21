@@ -5,8 +5,8 @@ var fs = require('fs');
 var https = require('https');
 
 var options = {
-    key: fs.readFileSync('./access/file.pem'),
-    cert: fs.readFileSync('./access/cert.pem')
+    key: fs.readFileSync('./access/live/professordex.com/privkey.pem'),
+    cert: fs.readFileSync('./access/live/professordex.com/cert.pem')
 };
 
 //** App Logic**

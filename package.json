@@ -1,0 +1,24 @@
+{
+  "name": "professordex",
+  "version": "1.0.0",
+  "description": "Facebook chat bot wrapping PokeDex.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIRHAMY/ProfessorDex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SIRHAMY/ProfessorDex/issues"
+  },
+  "homepage": "https://github.com/SIRHAMY/ProfessorDex#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "request": "^2.72.0"
+  }
+}

@@ -11,7 +11,7 @@ var options = {
 
 //** App Logic**
 var debug = true;
-var serverport = 80;
+var serverport = 443;
 
 console.log("ProfessorDex starting up.");
 

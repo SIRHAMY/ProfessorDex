@@ -19,7 +19,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "fs": "0.0.2",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "letsencrypt": "^1.4.4",
+    "letsencrypt-express": "^1.1.5"
   },
   "devDependencies": {
     "letsencrypt-cli": "^1.0.8"

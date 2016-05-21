@@ -1,10 +1,21 @@
 require('./environment.js');
 var express = require('express');
 var app = express();
+var fs = require('fs');
+var https = require('https');
 
+var options = {
+    key: fs.readFileSync('./access/file.pem'),
+    cert: fs.readFileSync('./access/file.crt')
+};
+
+//** App Logic**
 var debug = true;
+var serverport = 80;
 
 console.log("ProfessorDex starting up.");
+
+var server = https.createServer(options, app);
 
 app.get('/webhook', function (req, res) {
     
@@ -19,5 +30,6 @@ app.get('/webhook', function (req, res) {
     }
 });
 
-console.log("ProfessorDex listening...");
-app.listen(80); //Change to 80?
+server.listen(serverport, function(){
+    console.log("ProfessorDex listening on port: " + serverport);
+});

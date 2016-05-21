@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/SIRHAMY/ProfessorDex#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "https": "^1.0.0"
   }
 }

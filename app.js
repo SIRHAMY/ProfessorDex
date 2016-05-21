@@ -13,4 +13,4 @@ app.get('/webhook', function (req, res) {
 });
 
 console.log("ProfessorDex listening...");
-app.listen(8080); //Change to 80?
+app.listen(80); //Change to 80?

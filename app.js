@@ -2,6 +2,8 @@ require('./environment.js');
 var express = require('express');
 var app = express();
 
+console.log("ProfessorDex starting up.");
+
 app.get('/webhook', function (req, res) {
   if (req.query['hub.verify_token'] === process.env.VERIFY_TOKEN) {
     res.send(req.query['hub.challenge']);
@@ -10,4 +12,5 @@ app.get('/webhook', function (req, res) {
   }
 });
 
+console.log("ProfessorDex listening...");
 app.listen(8080); //Change to 80?
